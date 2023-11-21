@@ -1,6 +1,7 @@
 github_users:
-  - torvalds
-  - alshedivat
+ # - torvalds
+ # - alshedivat
+   - BogdanLata
 
 github_repos:
   - alshedivat/al-folio
