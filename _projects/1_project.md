@@ -7,7 +7,10 @@ importance: 1
 category: work
 related_publications: 
 ---
-{% embed https://math.stackexchange.com/questions/11246/how-to-prove-that-tan3-pi-11-4-sin2-pi-11-sqrt11/38927#38927 %}
+
+```math
+\left( \sum_{k=1}^n a_k b_k \right)^2 \leq \left( \sum_{k=1}^n a_k^2 \right) \left( \sum_{k=1}^n b_k^2 \right)
+```
 
 {% comment %} Every project has a beautiful feature showcase page.
 It's easy to include images in a flexible 3-column grid format.
