@@ -7,10 +7,15 @@ importance: 1
 category: work
 related_publications: 
 ---
+{% comment %}
 **The Cauchy-Schwarz Inequality**
 $$\left( \sum_{k=1}^n a_k b_k \right)^2 \leq \left( \sum_{k=1}^n a_k^2 \right) \left( \sum_{k=1}^n b_k^2 \right)$$
+{% endcomment %}
 
-[Fiddler problem](https://thefiddler.substack.com/p/can-you-race-around-the-monopoly)
+[Fiddler problem: Can You Race Around the Monopoly Board?](https://thefiddler.substack.com/p/can-you-race-around-the-monopoly)
+
+The probablity to reach number $$k$$ in the $$n$$-th cast be $$p_n(k)$. Then probability the number $$k$$ is hit is:
+$$p_1(k)+p_2(k)+p_3(k)+\ldots$$
 
 {% comment %} Every project has a beautiful feature showcase page.
 It's easy to include images in a flexible 3-column grid format.
