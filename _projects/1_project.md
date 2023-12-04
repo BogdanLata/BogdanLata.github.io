@@ -15,23 +15,18 @@ $$\left( \sum_{k=1}^n a_k b_k \right)^2 \leq \left( \sum_{k=1}^n a_k^2 \right) \
 [Fiddler problem: Can You Race Around the Monopoly Board?](https://thefiddler.substack.com/p/can-you-race-around-the-monopoly)
 
 The probablity to reach number $$x$$ in the $$n$$-th cast be $$p_n(x)$$. Then probability the number $$x$$ is hit is:  
-$$ p_1(x)+(1-p_1(x))*p_2(x)+(1-p_1(x))*(1-p_2(x))*p_3(x)+\ldots $$. Now, the probability mass function after casting two dice can be calculated from square of the generated polynomial of the p.m.f $$ g(x)=(x^6/6+x^5/6+x^4/6+x^3/6+x^2/6+x/6) $$.  That is, $$ h(x)=g^2(x)=x^2/36 + x^3/18 + x^4/12 + x^5/9 + (5 x^6)/36 + x^7/6 + (5 x^8)/36 \\ + x^9/9 + x^{10}/12 + x^{11}/18 + x^{12}/36 $$. So, for example, $$ p_2(8)=1/36 $$  
+$$ p_1(x)+(1-p_1(x))*p_2(x)+(1-p_1(x))*(1-p_2(x))*p_3(x)+\ldots $$. Now, the probability mass function after casting two dice can be calculated from square of the generated polynomial of the p.m.f $$ g(x)=(x^6/6+x^5/6+x^4/6+x^3/6+x^2/6+x/6) $$.  That is, $$ h(x)=g^2(x)=x^2/36 + x^3/18 + x^4/12 + x^5/9 + (5 x^6)/36 + x^7/6 + (5 x^8)/36 \newline + x^9/9 + x^{10}/12 + x^{11}/18 + x^{12}/36 $$. So, for example, $$ p_2(8)=1/36 $$  
 And the probability after another two-dice cast is the 4-th power of $$g$$ and so on.  
 The least element of the $$ h^{20} $$ is $$ x^{40} $$ and we only are interested in the numbers $x$ from 1 to 39. Therefore, we only have to calculate the powers of $$h$$ from 1 to 19.  
+
+Here is the Python code for two dice case:
 
 ```python
 import numpy as np
 from numpy.polynomial import Polynomial as P
 
 p= P([0,1/6,1/6,1/6,1/6,1/6,1/6])
-
-p=p**2
- print(q.degree())
-p.coef[6]
-r=[]
-for i in range(39):
-    r[0]=i
-    
+p=p**2    
 r = []
 for i in range(1, 40):
     r.append([i])
@@ -39,10 +34,7 @@ for i in range(1, 40):
 for i in range(1, 40):
     for j in range(1,20):
        q=p**j;
-    # Set the first value of the array as i
-       #print(i)
-       if i<= q.degree():
-        
+       if i<= q.degree():       
                          r[i-1].append(q.coef[i])
        else:
            r[i-1].append(0)
@@ -53,23 +45,17 @@ sum=[]
 for i in range(39):
     sum.append(0);
     for j in range(19):
-        #if i==0:print(j)
         product = 1
         for value in s[i][:j]:
           #print(:j)
           product *= 1-value
-          #if i==0:print(value);
-         # if i==0:print(product)
         product=product*s[i][j]
         sum[i]+=product
-        #if i==0:print('sum',sum[i])
-```
         
-print(max(sum))  
 print(max((val, idx+1) for idx, val in enumerate(sum)))
 s10=sum[10:]
 print(min((val, idx+11) for idx, val in enumerate(s10)))
-
+```
 
 
 {% comment %} Every project has a beautiful feature showcase page.
