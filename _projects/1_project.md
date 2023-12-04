@@ -24,7 +24,7 @@ Running the program, we obtain the extremum values for two dice case:
 (0.1796322, 7)
 (0.1228949, 13)
 So the maximum probability is p(7)~0.179632 and the minimum probability (out of the numbers from 10 to 39) is p(13)~0.1228949  
-For the three dice case, the least likely case is p(16)~0.075185  
+For the three dice case, the least likely case (out of the numbers from 10 to 39) is p(16)~0.075185  
 
 Here is the Python code for two dice case:
 
