@@ -18,11 +18,11 @@ The probablity to reach number $$x$$ in the $$n$$-th cast be $$p_n(x)$$. Then th
 $$ p(x)=p_1(x)+(1-p_1(x))*p_2(x)+(1-p_1(x))*(1-p_2(x))*p_3(x)+\ldots $$ Now, the probability mass function after casting two dice can be calculated from square of the generated polynomial of the p.m.f of one dice: $$ g(x)=x^6/6+x^5/6+x^4/6+x^3/6+x^2/6+x/6 $$.     
 That is, $$ h(x)=g^2(x)=x^2/36 + x^3/18 + x^4/12 + x^5/9 + 5 x^6/36 + x^7/6 + $$ $$ 5 x^8/36 + x^9/9 + x^{10}/12 + x^{11}/18 + x^{12}/36 $$.     
 So, for example, $$ p_2(8)=5/36 $$  
-And the probability after another two-dice cast is the 4-th power of $$g$$ and so on.   
-The least element of the $$ h^{20} $$ is $$ x^{40} $$ and we only are interested in the numbers $$x$$ from 1 to 39. Therefore, we only have to calculate the powers of $$h$$ from 1 to 19.    
-Running the program, we obtain the extremum values for two dice case:  
-(0.1796322, 7)
-(0.1228949, 13)
+And the probability after another two-dice cast is fiven by $$ h^2 $$.   
+The least element of the $$ h^{20} $$ is $$ x^{40} $$ and we only are interested in the numbers $$x$$ from 1 to 39. Therefore, we only have to calculate $$ h, h^2,\ldots h^{19}$.    
+Running the program, we obtain the extremum values for two dice case:    
+(0.1796322, 7) and
+(0.1228949, 13)  
 So the maximum probability is p(7)~0.179632 and the minimum probability (out of the numbers from 10 to 39) is p(13)~0.1228949  
 For the three dice case, the least likely case (out of the numbers from 10 to 39) is p(16)~0.075185  
 
