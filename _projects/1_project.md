@@ -19,7 +19,7 @@ $$ p(x)=p_1(x)+(1-p_1(x))*p_2(x)+(1-p_1(x))*(1-p_2(x))*p_3(x)+\ldots $$ Now, the
 That is, $$ h(x)=g^2(x)=x^2/36 + x^3/18 + x^4/12 + x^5/9 + 5 x^6/36 + x^7/6 + $$ $$ 5 x^8/36 + x^9/9 + x^{10}/12 + x^{11}/18 + x^{12}/36 $$.     
 So, for example, $$ p_2(8)=5/36 $$  
 And the probability after another two-dice cast is fiven by $$ h^2 $$.   
-The least element of the $$ h^{20} $$ is $$ x^{40} $$ and we only are interested in the numbers $$x$$ from 1 to 39. Therefore, we only have to calculate $$ h, h^2,\ldots h^{19}$.    
+The least element of the $$ h^{20} $$ is $$ x^{40} $$ and we only are interested in the numbers $$x$$ from 1 to 39. Therefore, we only have to calculate $$ h, h^2,\ldots h^{19} $$.    
 Running the program, we obtain the extremum values for two dice case:    
 (0.1796322, 7) and
 (0.1228949, 13)  
