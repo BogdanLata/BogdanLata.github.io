@@ -14,8 +14,10 @@ $$\left( \sum_{k=1}^n a_k b_k \right)^2 \leq \left( \sum_{k=1}^n a_k^2 \right) \
 
 [Fiddler problem: Can You Race Around the Monopoly Board?](https://thefiddler.substack.com/p/can-you-race-around-the-monopoly)
 
-The probablity to reach number $$k$$ in the $$n$$-th cast be $$p_n(k)$. Then probability the number $$k$$ is hit is:
-$$p_1(k)+p_2(k)+p_3(k)+\ldots$$
+The probablity to reach number $$k$$ in the $$n$$-th cast be $$p_n(k)$$. Then probability the number $$k$$ is hit is:
+$$ p_1(k)+(1-p_1(k))*p_2(k)+(1-p_1(k))*(1-p_2(k))*p_3(k)+\ldots $$. Now, the probability mass function after casting two dice can be calculated from square of the generated polynomial
+of the p.m.f $$ g(x)=(x^6/6+x^5/6+x^4/6+x^3/6+x^2/6+x/6) $$.
+And the probability after another two-dice cast is the 4-th power of $$g$$ and so on.
 
 {% comment %} Every project has a beautiful feature showcase page.
 It's easy to include images in a flexible 3-column grid format.
