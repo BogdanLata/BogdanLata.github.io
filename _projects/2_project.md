@@ -18,19 +18,19 @@ but $$P((0,0,1)\times (0,1,1)\rightarrow (0,0,0)\times (1,1,0))=0$$
 The transition probabilities form a transition probability matrix (t.p.m.) M that has dimension 64 x 64 and has the following form:
 $$
 \[
-  \left(\begin{array}
+  \begin{bmatrix}
     I & 0 \\
     R & Q \\ 
-  \end{array}\right)
+  \end{bmatrix}
   \]
  $$
  where $$R$$ is the 50x14 t.p.m. from the absorbing states to the non-absorbing, and the $$Q$$ is the 50x50 t.p.m. of the transient (non-absorbing) states
 
  Then the solution is provided by the following theorem:  
- If $$a_{ij}$$ is the probability that starting from transient state $i$ we reach the absorbing state $j$, then the matrix $$A=(a_{ij})$$ is given by:  
+ If $$a_{ij}$$ is the probability that starting from transient state $$i$$ we reach the absorbing state $j$$, then the matrix $$A=(a_{ij})$$ is given by:  
  $$A=(I-Q)^{-1}R$$.
- The matrix $$A$$ has dimension 50x14. It can be split into two parts $A_1$ with columns from 1 to 7 corresponding to reaching (1,1,1) and $$A_2$$ corresponding to reaching (1,1,0). 
- We calculate the total of all elements in matrix $$A_1$$, $$t_1$$ and respectively the total for $$A_2$$, $$t_2$$.  
+ The matrix $$A$$ has dimension 50x14. It can be split into two parts $$A_1$$ with columns from 1 to 7 corresponding to reaching (1,1,1) and $$A_2$$ corresponding to reaching (1,1,0). 
+ We calculate the total $$t_1$$ of all elements in matrix $$A_1$$ and respectively the total $$t_2$$ for $$A_2$$.  
  Then using the probabilities for the initial step we obtain that the probability that first player wins is $$1/16^2+7/16^2\cdot t_1$$ and the probability that second player wins is $$1/16^2+7/16\cdot t_2$$.
 
 
