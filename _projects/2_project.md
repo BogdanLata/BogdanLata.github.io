@@ -34,6 +34,7 @@ The transition probabilities form a transition probability matrix (t.p.m.) M tha
  Then using the probabilities for the initial step we obtain that the probability that first player wins is $$1/8^2+7/8^2\cdot t_1$$ and the probability that second player wins is $$1/8^2+7/8\cdot t_2$$.  
  We obtain the first probability as 25439/71106~0.3578  and second probability as 45667/71106~0.6422.
 
+{% comment %}
  I lost some parts of the program but that's a sketch of it:
  ```mathematica
  s1 = Tuples[{0, 1}, 3];
@@ -109,7 +110,7 @@ total2 = Total[Flatten[abm14]];
 myn2 = 7/8^2 + 1/8^2*total2
 Print[NumberForm[myn2, {Infinity, 2}]];
 ```
-
+{% endcomment %}
 
 
 
