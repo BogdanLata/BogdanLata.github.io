@@ -17,12 +17,12 @@ $$P((0,0,1)\times (0,1,1)\rightarrow (0,1,0)\times (1,1,1))=1/4$$
 $$P((0,0,1)\times (0,1,1)\rightarrow (0,1,1)\times (1,1,1))=1/4$$  
 but $$P((0,0,1)\times (0,1,1)\rightarrow (0,0,0)\times (1,1,0))=0$$  
 The transition probabilities form a transition probability matrix (t.p.m.) M that has dimension 64 x 64 and has the following form:
-
+$$
   \begin{bmatrix}
     I & 0 \\
     R & Q \\ 
   \end{bmatrix}
-  
+  $$
  
  where $$R$$ is the 50x14 t.p.m. from the absorbing states to the non-absorbing, and the $$Q$$ is the 50x50 t.p.m. of the transient (non-absorbing) states
 
