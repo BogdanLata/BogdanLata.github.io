@@ -6,6 +6,25 @@ img: assets/img/3.jpg
 importance: 2
 category: work
 ---
+[Fiddler Problem: Don't flip out](https://thefiddler.substack.com/p/dont-flip-out)
+We calculate the probability using a Markov process method. We define the states $$(a_1,a_2,a_3)\times (b_1,b_2,b_3)$ and define the transition probabilities from a state to other $$p_{ij}((a_1,a_2,a_3)\times (b_1,b_2.b_3)\rightarrow (c_1,c_2,c_3)\times (d_1,d_2,d_3))$$, where each $$a,b,c,d$ are 0 or 1.   
+For our problem, we have 14 absorbing states, 7 when the game ends with either player A wins (corresponding to tuple (1,1,1)) and 7 when player B wins(corresponding to tuple (1,1,0)). These absorbing states are:  
+The transition probabilities form a transition probability matrix M that has the following form:
+$$
+\[
+  \left(\begin{array}
+    I & 0 \\
+    R & Q \\ 
+  \end{array}\right)
+\] $$
+
+
+
+
+
+
+
+
 {% comment %}
 Every project has a beautiful feature showcase page.
 It's easy to include images in a flexible 3-column grid format.
