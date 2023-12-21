@@ -17,13 +17,13 @@ $$P((0,0,1)\times (0,1,1)\rightarrow (0,1,0)\times (1,1,1))=1/4$$
 $$P((0,0,1)\times (0,1,1)\rightarrow (0,1,1)\times (1,1,1))=1/4$$  
 but $$P((0,0,1)\times (0,1,1)\rightarrow (0,0,0)\times (1,1,0))=0$$  
 The transition probabilities form a transition probability matrix (t.p.m.) M that has dimension 64 x 64 and has the following form:
-$$
+
   \begin{bmatrix}
     I & 0 \\
     R & Q \\ 
   \end{bmatrix}
   
- $$
+ 
  where $$R$$ is the 50x14 t.p.m. from the absorbing states to the non-absorbing, and the $$Q$$ is the 50x50 t.p.m. of the transient (non-absorbing) states
 
  Then the solution is provided by the following theorem:  
@@ -33,6 +33,83 @@ $$
  We calculate the total $$t_1$$ of all elements in matrix $$A_1$$ and respectively the total $$t_2$$ for $$A_2$$.  
  Then using the probabilities for the initial step we obtain that the probability that first player wins is $$1/8^2+7/8^2\cdot t_1$$ and the probability that second player wins is $$1/8^2+7/8\cdot t_2$$.  
  We obtain the first probability as 25439/71106~0.3578  and second probability as 45667/71106~0.6422.
+
+ I lost some parts of the program but that's a sketch of it:
+ '''mathematica
+ s1 = Tuples[{0, 1}, 3];
+s2 = Tuples[{0, 1}, 3];
+
+
+a = Flatten[Outer[List, s1, s2, 1], 1];
+a = Take[a, 64];
+numRows = Length[a];
+numCols = Length[a];
+
+matrix = Table[0, {numRows}, {numCols}];
+
+For[i = 1, i <= numRows, i++, 
+ For[j = 1, j <= numCols, j++, 
+   If[(a[[i, 1, 2]] == a[[j, 1, 1]] && a[[i, 1, 3]] == a[[j, 1, 2]] &&
+
+       
+       a[[i, 2, 2]] == a[[j, 2, 1]] &&
+       a[[i, 2, 3]] == a[[j, 2, 2]]), matrix[[i, j]] = 1/4;];];]
+
+i = IdentityMatrix[50];
+b = i - matrix
+inv = Inverse[b]
+f = Select[a2, #[[1]] == {1, 1, 1} || #[[2]] == {1, 1, 0} &]
+f = DeleteCases[f, {{1, 1, 1}, {1, 1, 0}}, Infinity];
+additionalPair = {{1, 1, 1}, {1, 1, 0}};
+f = Join[f, {additionalPair}];
+
+g = Select[a2, #[[1]] != {1, 1, 1} && #[[2]] != {1, 1, 0} &]
+additionalPair = {{1, 1, 1}, {1, 1, 0}};
+g = Join[g, {additionalPair}];
+
+
+numRows = 50;
+numCols = 7;
+
+matrix2 = Table[0, {numRows}, {numCols}];
+
+For[i = 1, i <= numRows, i++, 
+ For[j = 1, j <= numCols, j++, 
+  If[(g[[i, 2, 2]] == 1 && g[[i, 2, 3]] == 1 && 
+      g[[i, 1, 2]] == f[[j, 1, 1]] && g[[i, 1, 3]] == f[[j, 1, 2]]), 
+    matrix2[[i, j]] = 1/4;
+    Print["i: ", i, ", j: ", j, ", matrix2[", i, ",", j, "]: ", 
+     matrix2[[i, j]]];];];
+ Print["Outer loop, i: ", i];]
+
+numRows = 50;
+numCols = 7;
+
+matrix3 = Table[0, {numRows}, {numCols}];
+
+For[i = 1, i <= numRows, i++, 
+ For[j = 1, j <= numCols, j++, 
+  If[(g[[i, 1, 2]] == 1 && g[[i, 1, 3]] == 1 && 
+      g[[i, 2, 2]] == f[[j + 7, 2, 1]] && 
+      g[[i, 2, 3]] == f[[j + 7, 2, 2]]), matrix3[[i, j]] = 1/4;
+    Print["i: ", i, ", j: ", j, ", matrix3[", i, ",", j, "]: ", 
+     matrix3[[i, j]]];];];
+ Print["Outer loop, i: ", i];]
+
+rmatrix = Join[matrix2, matrix3, 2];
+ab = inv.rmatrix
+abm = ArrayReshape[ab, {50, 14}];
+rq = Join[rmatrix, matrix, 2]
+abm7 = Take[abm, All, 7];
+total = Total[Flatten[abm7]];
+myn = 7/8^2 + 1/8^2*total
+Print[NumberForm[myn, {Infinity, 2}]];
+abm14 = abm[[All, 7 ;; 14]];
+total2 = Total[Flatten[abm14]];
+myn2 = 7/8^2 + 1/8^2*total2
+Print[NumberForm[myn2, {Infinity, 2}]];
+'''
+
 
 
 
