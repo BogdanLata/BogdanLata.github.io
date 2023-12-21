@@ -7,9 +7,15 @@ importance: 2
 category: work
 ---
 [Fiddler Problem: Don't flip out](https://thefiddler.substack.com/p/dont-flip-out)
-We calculate the probability using a Markov process method. We define the states $$(a_1,a_2,a_3)\times (b_1,b_2,b_3)$$ and define the transition probabilities from a state to other $$p_{ij}((a_1,a_2,a_3)\times (b_1,b_2.b_3)\rightarrow (c_1,c_2,c_3)\times (d_1,d_2,d_3))$$, where each $$a,b,c,d$ are 0 or 1.   
-For our problem, we have 14 absorbing states, 7 when the game ends with either player A wins (corresponding to tuple (1,1,1)) and 7 when player B wins(corresponding to tuple (1,1,0)). These absorbing states are:  
-The transition probabilities form a transition probability matrix M that has the following form:
+We calculate the probability using a Markov process method. We define the states $$(a_1,a_2,a_3)\times (b_1,b_2,b_3)$$ and define the transition probabilities from a state to other $$p_{ij}((a_1,a_2,a_3)\times (b_1,b_2.b_3)\rightarrow (c_1,c_2,c_3)\times (d_1,d_2,d_3))$$, where each $$a,b,c,d$$ are 0 or 1.   
+For our problem, we have 14 absorbing states, 7 when the game ends with either first player wins (corresponding to tuple (1,1,1)) and 7 when second player wins(corresponding to tuple (1,1,0)). These absorbing states are:   
+We have that each transition probability is either 1/4 or 0.  
+For example: $$P((0,0,1)\times (0,1,1)\rightarrow (1,0,0)\times (1,1,0))=1/4$$
+$$P((0,0,1)\times (0,1,1)\rightarrow (1,0,1)\times (1,1,0))=1/4$$  
+$$P((0,0,1)\times (0,1,1)\rightarrow (1,0,0)\times (1,1,1))=1/4$$  
+$$P((0,0,1)\times (0,1,1)\rightarrow (1,0,1)\times (1,1,1))=1/4$$  
+but $$P((0,0,1)\times (0,1,1)\rightarrow (0,0,0)\times (1,1,0))=0$$
+The transition probabilities form a transition probability matrix (t.p.m.) M that has dimension 64 x 64 and has the following form:
 $$
 
   \left(\begin{array}
@@ -17,6 +23,14 @@ $$
     R & Q \\ 
   \end{array}\right)
  $$
+ where $$R$$ is the 50x14 t.p.m. from the absorbing states to the non-absorbing, and the $$Q$$ is the 50x50 t.p.m. of the transient (non-absorbing) states
+
+ Then the solution is provided by the following theorem:  
+ If $$a_{ij}$ is the probability that starting from transient state $i$ we reach the absorbing state $j$, then the matrix $$A=(a_{ij})$$ is given by:  
+ $$A=(I-Q)^{-1}R$$.
+ The matrix $$A$$ has dimension 50x14. It can be split into two parts $A_1$ with columns from 1 to 7 corresponding to reaching (1,1,1) and $$A_2$$ corresponding to reaching (1,1,0). 
+ We calculate the total of all elements in matrix $$A_1$$, $$t_1$$ and respectively the total for $$A_2$$, $$t_2$$.  
+ Then using the probabilities for the initial step we obtain that the probability that first player wins is $$1/16^2+7/16^2\cdot t_1$$ and the probability that second player wins is $$1/16^2+7/16\cdot t_2$$.
 
 
 
