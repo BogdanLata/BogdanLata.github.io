@@ -31,7 +31,7 @@ $$
  $$A=(I-Q)^{-1}R$$.
  The matrix $$A$$ has dimension 50x14. It can be split into two parts $$A_1$$ with columns from 1 to 7 corresponding to reaching (1,1,1) and $$A_2$$ corresponding to reaching (1,1,0). 
  We calculate the total $$t_1$$ of all elements in matrix $$A_1$$ and respectively the total $$t_2$$ for $$A_2$$.  
- Then using the probabilities for the initial step we obtain that the probability that first player wins is $$1/16^2+7/16^2\cdot t_1$$ and the probability that second player wins is $$1/16^2+7/16\cdot t_2$$.  
+ Then using the probabilities for the initial step we obtain that the probability that first player wins is $$1/8^2+7/8^2\cdot t_1$$ and the probability that second player wins is $$1/8^2+7/8\cdot t_2$$.  
  We obtain the first probability as 25439/71106~0.3578  and second probability as 45667/71106~0.6422.
 
 
