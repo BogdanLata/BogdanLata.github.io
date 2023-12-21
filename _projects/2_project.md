@@ -8,7 +8,7 @@ category: work
 ---
 [Fiddler Problem: Don't flip out](https://thefiddler.substack.com/p/dont-flip-out)  
 We calculate the probability using a Markov process method. We define the states $$(a_1,a_2,a_3)\times (b_1,b_2,b_3)$$ and define the transition probabilities from a state to other $$p_{ij}((a_1,a_2,a_3)\times (b_1,b_2.b_3)\rightarrow (c_1,c_2,c_3)\times (d_1,d_2,d_3))$$, where each $$a,b,c,d$$ are 0 or 1.  
-The tuples can be any of $${{0,0,0},{0,0,1},{0,1,0},{0,1,1},{1,0,0},{1,0,1},{1,1,0},{1,1,1}}$$  
+The tuples can be any of $$((0,0,0),(0,0,1),(0,1,0),(0,1,1),(1,0,0),(1,0,1),(1,1,0},(1,1,1))$$  
 For our problem, we have 14 absorbing states, 7 when the game ends with either first player wins (corresponding to tuple (1,1,1)) and 7 when second player wins(corresponding to tuple (1,1,0)). These absorbing states are:   
 We have that each transition probability is either 1/4 or 0.  
 For example: $$P((0,0,1)\times (0,1,1)\rightarrow (0,1,0)\times (1,1,0))=1/4$$
