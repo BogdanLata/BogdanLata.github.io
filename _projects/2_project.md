@@ -35,7 +35,7 @@ The transition probabilities form a transition probability matrix (t.p.m.) M tha
  We obtain the first probability as 25439/71106~0.3578  and second probability as 45667/71106~0.6422.
 
  I lost some parts of the program but that's a sketch of it:
- '''mathematica
+ ```mathematica
  s1 = Tuples[{0, 1}, 3];
 s2 = Tuples[{0, 1}, 3];
 
@@ -108,7 +108,7 @@ abm14 = abm[[All, 7 ;; 14]];
 total2 = Total[Flatten[abm14]];
 myn2 = 7/8^2 + 1/8^2*total2
 Print[NumberForm[myn2, {Infinity, 2}]];
-'''
+```
 
 
 
