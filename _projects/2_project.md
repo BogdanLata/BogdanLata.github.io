@@ -17,7 +17,7 @@ $$P((0,0,1)\times (0,1,1)\rightarrow (0,1,0)\times (1,1,1))=1/4$$
 $$P((0,0,1)\times (0,1,1)\rightarrow (0,1,1)\times (1,1,1))=1/4$$  
 but $$P((0,0,1)\times (0,1,1)\rightarrow (0,0,0)\times (1,1,0))=0$$  
 The transition probabilities form a transition probability matrix (t.p.m.) M that has dimension 64 x 64 and has the following form:
-
+$$
   \begin{bmatrix}
     I & 0 \\
     R & Q \\ 
