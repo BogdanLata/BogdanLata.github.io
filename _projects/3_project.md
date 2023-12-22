@@ -81,11 +81,11 @@ Here's the code for the last row of images above:
 {% endraw %}
 {% endcomment %}
 
-{% comment %}
+{% raw %}
 ```python
 a={{{0,0,0},{0,0,0}},{{0,0,1},{0,0,1}},{{0,1,0},{0,1,0}},{{0,1,1},{0,1,1}},{{1,0,0},{1,0,0}},{{1,0,1},{1,0,1}},{{1,1,0},{1,1,0}},{{1,1,1},{1,1,1}}}
 ```
-{% endcomment %}
+{% endraw %}
 
 p
 
