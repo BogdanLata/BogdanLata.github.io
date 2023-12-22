@@ -94,7 +94,7 @@ a={{{0,0,0},{0,0,0}},{{0,0,1},{0,0,1}},{{0,1,0},{0,1,0}},{{0,1,1},{0,1,1}},{{1,0
 my_variable = "{0, 0, 0}"
 print(my_variable)
 ```
-{% endraw %}{{% endcapture %}
+{% endraw %}{% endcapture %}
 
 {% comment %}
 <div class="row">
