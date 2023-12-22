@@ -89,12 +89,7 @@ a={{{0,0,0},{0,0,0}},{{0,0,1},{0,0,1}},{{0,1,0},{0,1,0}},{{0,1,1},{0,1,1}},{{1,0
 
 
 
-{% capture code %}{% raw %}
-```python
-my_variable = "{0, 0, 0}"
-print(my_variable)
-```
-{% endraw %}{% endcapture %}
+
 
 {% comment %}
 <div class="row">
