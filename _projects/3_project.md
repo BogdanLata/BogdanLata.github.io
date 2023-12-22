@@ -81,10 +81,11 @@ Here's the code for the last row of images above:
 {% endraw %}
 {% endcomment %}
 
-
+{% raw %}
 '''python
 {{{0,0,0},{0,0,0}},{{0,0,1},{0,0,1}},{{0,1,0},{0,1,0}},{{0,1,1},{0,1,1}},{{1,0,0},{1,0,0}},{{1,0,1},{1,0,1}},{{1,1,0},{1,1,0}},{{1,1,1},{1,1,1}}}[[64]]
 '''
+{% endraw %}
 
 
 python
@@ -93,11 +94,12 @@ my_variable = "{0, 0, 0}"
 print(my_variable)
 '''
 
+{% comment %}
 <div class="row">
     <div class="col">
         {% raw %}{0, 0, 0}{% endraw %}
     </div>
-</div>
+</div> {% endcomment %}
 
 
 
