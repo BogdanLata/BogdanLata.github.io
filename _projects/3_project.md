@@ -1,9 +1,9 @@
 ---
 layout: page
 title: project 3
-description: a project that redirects to another website
+description: 
 img: assets/img/7.jpg
-redirect: https://unsplash.com
+redirect: 
 importance: 3
 category: work
 ---
@@ -81,8 +81,9 @@ Here's the code for the last row of images above:
 {% endraw %}
 {% endcomment %}
 
-
+{% raw %}
 '''python
 {{{0,0,0},{0,0,0}},{{0,0,1},{0,0,1}},{{0,1,0},{0,1,0}},{{0,1,1},{0,1,1}},{{1,0,0},{1,0,0}},{{1,0,1},{1,0,1}},{{1,1,0},{1,1,0}},{{1,1,1},{1,1,1}}}[[64]]
 '''
+{% endraw %}
 
