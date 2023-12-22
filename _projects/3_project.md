@@ -89,10 +89,10 @@ Here's the code for the last row of images above:
 
 
 python
-'''python
+```python
 my_variable = "{0, 0, 0}"
 print(my_variable)
-'''
+```
 
 {% comment %}
 <div class="row">
