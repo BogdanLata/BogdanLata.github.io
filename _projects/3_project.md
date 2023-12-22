@@ -92,7 +92,7 @@ a={{{0,0,0},{0,0,0}},{{0,0,1},{0,0,1}},{{0,1,0},{0,1,0}},{{0,1,1},{0,1,1}},{{1,0
 python
 ```python
 my_variable = "{0, 0, 0}"
-prin(my_variable)
+print(my_variable)
 ```
 
 {% comment %}
