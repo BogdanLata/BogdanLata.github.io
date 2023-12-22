@@ -87,3 +87,17 @@ Here's the code for the last row of images above:
 '''
 {% endraw %}
 
+python
+'''python
+my_variable = "{0, 0, 0}"
+print(my_variable)
+'''
+
+<div class="row">
+    <div class="col">
+        {% raw %}{0, 0, 0}{% endraw %}
+    </div>
+</div>
+
+
+
