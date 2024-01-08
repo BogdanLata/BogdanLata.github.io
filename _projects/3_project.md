@@ -88,14 +88,13 @@ a={{{0,0,0},{0,0,0}},{{0,0,1},{0,0,1}},{{0,1,0},{0,1,0}},{{0,1,1},{0,1,1}},{{1,0
 ```
 {% endraw %}
 {% endcomment %}
-
-
 	Supposons que $$x\geq y \geq z$$.Nous avons que
 	$$\sqrt[m]{xy}\geq \sqrt[m]{xz}\geq \sqrt[m]{yz}$$ et
 	$$\begin{equation}
 	\frac{\sqrt[n]{x}}{1+\sqrt[n]{x}}\geq 	\frac{\sqrt[n]{y}}{1+\sqrt[n]{y}}\geq 
 	\frac{\sqrt[n]{z}}{1+\sqrt[n]{z}}
 \end{equation}$$
+{% comment %}
 Par l'inégalité de Chebyshev,
 $$\begin{equation}
 	\sum \sqrt[m]{xy}	\frac{\sqrt[n]{z}}{1+\sqrt[n]{z}}\leq
@@ -113,6 +112,7 @@ $$begin{equation}
 Mais on connaît que $$3(xy+xz+yz)\leq (x+y+z)^2=9\rightarrow xy+xz+yz\leq 3 $$
 Par conséquent, $$\sum \sqrt[m]{xy}	\frac{\sqrt[n]{z}}{1+\sqrt[n]{z}}
 \leq 1/3*3*3/2=3/2$$
+{% endcomment %}
 
 
 
