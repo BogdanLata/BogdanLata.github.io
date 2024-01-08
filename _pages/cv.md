@@ -1,3 +1,4 @@
+{% comment %}
 ---
 layout: cv
 permalink: /cv/
@@ -9,3 +10,5 @@ description: This is a description of the page. You can modify it in 'pages/_cv.
 toc:
   sidebar: left
 ---
+
+{% endcomment %}
