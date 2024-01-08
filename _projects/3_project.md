@@ -111,7 +111,7 @@ Alors par l'inégalité de Jensen, $$
  $$
  
 $$
-begin{equation}
+\begin{equation}
 \sum \sqrt[m]{xy}\leq 3*\sqrt[m]{(xy+xz+yz)/3}
 \end{equation}
 $$
