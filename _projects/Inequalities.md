@@ -2,7 +2,7 @@
 layout: page
 title: Inequalities
 description: 
-img: assets/img/7.jpg
+img:
 redirect: 
 importance: 3
 category: work
