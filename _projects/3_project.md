@@ -1,6 +1,6 @@
 ---
 layout: page
-title: project 3
+title: Inequalities
 description: 
 img: assets/img/7.jpg
 redirect: 
@@ -88,7 +88,7 @@ a={{{0,0,0},{0,0,0}},{{0,0,1},{0,0,1}},{{0,1,0},{0,1,0}},{{0,1,1},{0,1,1}},{{1,0
 ```
 {% endraw %}
 {% endcomment %}
-Crux Mathematicorum.Problem 4848.
+1. Crux Mathematicorum.Problem 4848.
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.html path="assets/img/crux4848.png" title="example image" class="img-fluid rounded z-depth-1" %}
