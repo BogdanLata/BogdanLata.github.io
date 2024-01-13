@@ -36,8 +36,14 @@ $$
 
 
 <a name="dice1"></a>
+[link](#dice2)
 [Fiddler Problem: Can You Roll the Dungeon Master’s Dice?](https://thefiddler.substack.com/p/can-you-roll-the-dungeon-masters)  
-
+Suppose we choose $$x$$ and $$y$$ from set $$A=[4,8,8,10,12,20]$$. We find minimum of them, $$\min(x,y)$$. Then the probability to pick two equal numbers is:
+$$
+\begin{equation}
+\sum_{(x,y)\in A\times A}\frac{\min(x,y)}{36}
+\end{equation}, $$
+since we have 36 pairs.
 
 
 
