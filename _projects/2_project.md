@@ -35,6 +35,17 @@ $$
  We obtain the first probability as 25439/71106~0.3578  and second probability as 45667/71106~0.6422.
 
 
+<a name="dice1"></a>
+[Fiddler Problem: Can You Roll the Dungeon Master’s Dice?](https://thefiddler.substack.com/p/can-you-roll-the-dungeon-masters)  
+
+
+
+
+
+
+ 
+
+
 {% comment %}
 Every project has a beautiful feature showcase page.
 It's easy to include images in a flexible 3-column grid format.
