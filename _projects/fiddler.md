@@ -58,7 +58,7 @@ The probability that only two values are different out of three is :$$p_2=1-p_1-
 Therefore the expectation of the number of different values is:    
 $$E=p_1+2\cdot p_2+3\cdot p_3=\frac{100692665119318197445}{36893488147419103232}\sim 0.24966$$.
 <details><summary>Python program</summary>.
-  ```python   
+```python   
 import numpy as np;import random  
 from decimal import Decimal, getcontext  
 from fractions import Fraction
