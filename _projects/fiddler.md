@@ -86,11 +86,9 @@ q2=1-q1-q3;print(q2);print(q1+2*q2+3*q3);print(dec(q2))
 
 
 
-<strong>Heading</strong>
 
 </details>
 
-stop
 
  
 
