@@ -58,7 +58,12 @@ The probability that only two values are different out of three is :$$p_2=1-p_1-
 Therefore the expectation of the number of different values is:    
 $$E=p_1+2\cdot p_2+3\cdot p_3=\frac{100692665119318197445}{36893488147419103232}\sim 0.24966$$.
 
-<strong>Heading</strong>
+<details>
+<summary>
+  Python program
+</summary>  
+   
+
 <pre><code>
  ```python   
 import numpy as np;import random  
@@ -79,11 +84,6 @@ q2=1-q1-q3;print(q2);print(q1+2*q2+3*q3);print(dec(q2))
 ```
 </code></pre>
 
-<details>
-<summary>
-  Python program
-</summary>  
-   
 
 
 <strong>Heading</strong>
