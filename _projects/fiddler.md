@@ -46,9 +46,8 @@ $$
 since we have 36 pairs.  
 **Extra Credit** Suppose we pick a tuple $$(x,y,z)\in A\times A\times A$$. Then we sort $$(x,y,z)$$ to get $$(a,b,c)$$, where $$a\leq b\leq c$$. Now we cast the dice $$x,y,z$$ to obtain three values. The probability that all three values are equal is:
 $$
-\begin{equation}
 p_1=\sum_{(x,y,z)\in A\times A\times A}\frac{a}{216*x*y*z}=\frac{388494218522510891}{36893488147419103232}\sim 0.01053
-\end{equation}\eqno\hbox{(6)} $$  
+\eqno\hbox{(6)} $$  
 The probability that all three values are different is:  
 $$
 \begin{equation*}
