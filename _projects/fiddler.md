@@ -61,7 +61,7 @@ $$E=p_1+2\cdot p_2+3\cdot p_3=\frac{100692665119318197445}{36893488147419103232}
 ### Heading
 
  <details><summary>Python program</summary>  
-
+<p>
 
 ```python   
 import numpy as np;import random  
@@ -80,7 +80,7 @@ q1=sum(q[:,4]);print(q1);print(dec(q1))
 q3=sum(q[:,5]);print(q3);print(dec(q3))
 q2=1-q1-q3;print(q2);print(q1+2*q2+3*q3);print(dec(q2))
 ```
-
+</p>
 
 </details>
 
