@@ -45,14 +45,14 @@ $$
 \end{aligned}, $$
 since we have 36 pairs.  
 **Extra Credit** Suppose we pick a tuple $$(x,y,z)\in A\times A\times A$$. Then we sort $$(x,y,z)$$ to get $$(a,b,c)$$, where $$a\leq b\leq c$$. Now we cast the dice $$x,y,z$$ to obtain three values. The probability that all three values are equal is:
-$$\begin{equation*}
+$$\begin{equation}
 p_1=\sum_{(x,y,z)\in A\times A\times A}\frac{a}{216xyz}=\frac{388494218522510891}{36893488147419103232}\sim 0.01053
-\end{equation*} $$  
+\end{equation} $$  
 The probability that all three values are different is:  
 $$
 \begin{equation}
 p_3=\sum_{(x,y,z)\in A\times A\times A}\frac{a(b-1)(c-2)}{216xyz}=\frac{1705886440187656367}{2305843009213693952}\sim 0.73981
-\end{equation} \nonumber $$
+\end{equation} \notag $$
 
 The probability that only two values are different out of three is :$$p_2=1-p_1-p_3$$.    
 Therefore the expectation of the number of different values is:    
