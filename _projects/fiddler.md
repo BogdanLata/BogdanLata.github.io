@@ -67,7 +67,7 @@ $$E=p_1+2\cdot p_2+3\cdot p_3=\frac{100692665119318197445}{36893488147419103232}
    
 
 
-### Heading
+<strong>Heading</strong>
 
 </details>
 
