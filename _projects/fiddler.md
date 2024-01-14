@@ -35,15 +35,16 @@ $$
  We obtain the first probability as 25439/71106~0.3578  and second probability as 45667/71106~0.6422.
 
 
-<a name="dice1"></a>
+<a name="dice1"></a>  
+  
 [Fiddler Problem: Can You Roll the Dungeon Master’s Dice?](https://thefiddler.substack.com/p/can-you-roll-the-dungeon-masters)  
 Suppose we choose $$x$$ and $$y$$ from set $$A=[4,6,8,10,12,20]$$. We find minimum of them, $$\min(x,y)$$. Then the probability to pick two equal numbers is:  
 $$
-\begin{equation*}
+\begin{equation}
 \sum_{(x,y)\in A\times A}\frac{\min(x,y)}{36*x*y}=\frac{432345564227567591}{4611686018427387904}\sim 0.9375
-\end{equation*}, $$
+\end{equation}, $$
 since we have 36 pairs.  
-**Extra Credit** To find the probability, suppose we pick a tuple $$(x,y,z)\in A\times A\times A$$. Then we sort $$(x,y,z)$$ to get $$(a,b,c)$$, where $$a\leq b\leq c$$. Now we cast the dice $$x,y,z$$ to obtain three values. The probability that all three values are equal is:
+**Extra Credit** Suppose we pick a tuple $$(x,y,z)\in A\times A\times A$$. Then we sort $$(x,y,z)$$ to get $$(a,b,c)$$, where $$a\leq b\leq c$$. Now we cast the dice $$x,y,z$$ to obtain three values. The probability that all three values are equal is:
 $$
 \begin{equation*}
 p_1=\sum_{(x,y,z)\in A\times A\times A}\frac{a}{216*x*y*z}=\frac{388494218522510891}{36893488147419103232}\sim 0.01053
