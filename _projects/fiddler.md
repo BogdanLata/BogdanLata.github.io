@@ -62,23 +62,7 @@ $$E=p_1+2\cdot p_2+3\cdot p_3=\frac{100692665119318197445}{36893488147419103232}
 
 
 ### Heading 
-```python   
-import numpy as np;import random  
-from decimal import Decimal, getcontext  
-from fractions import Fraction
-from myscript import List,dec
-A = [4, 6, 8, 10, 12, 20]
-p = [(x, y,min(x,y),Fraction(1/36*min(x,y)/(x*y))) for x in A for y in A]
-p=np.array(p)
-w=sum(p[:,3]);print(w)
-print(dec(w)
-q=[(x,y,z,pr,Fraction(min(x,y,z)/(216*x*y*z)),Fraction(pr)) for x in A for y in A for z in A
-   if ((o:=List(sorted([x,y,z]))) and (pr:=o[1]*(o[2]-1)*(o[3]-2)*1/(x*y*z)*1/216))]
-q=np.array(q)
-q1=sum(q[:,4]);print(q1);print(dec(q1))
-q3=sum(q[:,5]);print(q3);print(dec(q3))
-q2=1-q1-q3;print(q2);print(q1+2*q2+3*q3);print(dec(q2))
-```
+
 
 </details>
 
