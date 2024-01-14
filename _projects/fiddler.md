@@ -53,14 +53,13 @@ $$
 \begin{equation*}
 p_3=\sum_{(x,y,z)\in A\times A\times A}\frac{a*(b-1)*(c-2)}{216*x*y*z}=\frac{1705886440187656367}{2305843009213693952}\sim 0.73981
 \end{equation*} $$
-The probability that only two values are different out of three is :$$p_2=1-p_1-p_3.  
+The probability that only two values are different out of three is :$$p_2=1-p_1-p_3$$.  
 Therefore the expectation of the number of different values is:  
 $$E=p_1+2\cdot p_2+3\cdot p_3=\frac{100692665119318197445}{36893488147419103232}\sim 0.24966$$.
-<details><summary>Python program</summary>
-  ```python
-  
-mport numpy as np;import random
-from decimal import Decimal, getcontext
+<details><summary>Python program</summary>.
+  ```python   
+import numpy as np;import random  
+from decimal import Decimal, getcontext  
 from fractions import Fraction
 from myscript import List,dec
 A = [4, 6, 8, 10, 12, 20]
