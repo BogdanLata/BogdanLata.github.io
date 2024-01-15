@@ -56,7 +56,7 @@ p_3=\sum_{(x,y,z)\in A\times A\times A}\frac{a(b-1)(c-2)}{216xyz}=\frac{17058864
 
 The probability that only two values are different out of three is :$$p_2=1-p_1-p_3$$.    
 Therefore the expectation of the number of different values is:    
-$$E=p_1+2\cdot p_2+3\cdot p_3=\frac{100692665119318197445}{36893488147419103232}\sim 0.24966$$.
+$$E=p_1+2\cdot p_2+3\cdot p_3=\frac{100692665119318197445}{36893488147419103232}\sim 2.72928$$.
 
 <details>
 <summary>
