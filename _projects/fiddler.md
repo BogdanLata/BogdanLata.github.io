@@ -41,7 +41,7 @@ $$
 Suppose we choose $$x$$ and $$y$$ from set $$A=[4,6,8,10,12,20]$$. We find minimum of them, $$\min(x,y)$$. Then the probability to pick two equal numbers is:  
 $$
 \begin{equation}
-\sum_{(x,y)\in A\times A}\frac{\min(x,y)}{36\cdot x \cdot y}=\frac{432345564227567591}{4611686018427387904}\sim 0.9375
+\sum_{(x,y)\in A\times A}\frac{\min(x,y)}{36\cdot x \cdot y}=\frac{432345564227567591}{4611686018427387904}\sim 0.09375
 \end{equation}, $$
 since we have 36 pairs.  
 **Extra Credit** Suppose we pick a tuple $$(x,y,z)\in A\times A\times A$$. Then we sort $$(x,y,z)$$ to get $$(a,b,c)$$, where $$a\leq b\leq c$$. Now we cast the dice $$x,y,z$$ to obtain three values. The probability that all three values are equal is:
