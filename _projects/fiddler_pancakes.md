@@ -44,7 +44,7 @@ Case 3) (1st,2nd,3rd)=(C,B,D). Coefficients (2,3,6,2). Here, $$T=1370/79\sim 17.
 Case 4) (1st,2nd,3rd)=(C,D,B). Coefficients (2,3,2,3). Here $$T=35/2=17.5$$  
 Case 5) (1st,2nd,3rd)=(D,B,C). Coefficients (2,6,3,2). Here $$T=190/11\sim 17.2727$$  
 Case 6) (1st,2nd,3rd)=(D,C,B). Coefficients (2,6,2,3). Here $$T=160/9\sim 17.7778$$  
-The system of equations were solved with computer algebra.  In conclusion, the ideal set up is case 5_ with the time:190/11  
+The system of equations were solved with computer algebra.  In conclusion, the ideal set up is case 5 with the time:190/11  
 **Discussion**:  
 1) One can see that the solution is valid for any distance from playground to home or any intermediary distance. That is if he have, say, halved the distance, the optimal solution is the same and we just halve the time. So the solution includes the 4 siblings repeating the above procedure again and again on any intermediary distance. Naturally that can be done a finite number of times.  
 2)  If there is no intermediary meeting of all 4 or of 3 of them, then the minimal time is when A, B rush to the end, in which case $$T=20$$.    
