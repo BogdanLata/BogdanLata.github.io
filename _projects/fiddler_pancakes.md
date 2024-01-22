@@ -67,7 +67,7 @@ Case 5) (1st,2nd,3rd)=(D,B,C). Coefficients (2,6,3,2). Here $$T=205/12\sim 17.08
 Case 6) (1st,2nd,3rd)=(D,C,B). Coefficients (2,6,2,3). Here $$T=510/29\sim 17.5862$$  
 The fact that we get negative results for cases 1 and 4 is because the model is incorrect. Say we are in case 1) (B,D,C). What happens is that when A returns to C second time to pick her, C already passed the point where A dropped B. So we have to adjust the equations to:
 $$30t=10(t+2u),20(x+y)=10(2u+x+y)$$,$$30(u+x)=10(u+x+2y),20z=10(2y+z)$$ which lead to time $$T=10/L(L+2u+2y)=120/7=17.1429$$. The case 4) (C,D,B) also leads to same time.   
-The system of equations were solved with computer algebra.  In conclusion, the ideal set up is case 5 with the time:205/12$$\sim 17.0833$$ for cases 3) and 5)  
+The system of equations were solved with computer algebra.  In conclusion, the ideal set up is case 3 and case 5 with the time:205/12$$\sim 17.0833$$.    
 **Discussion**:  
 1) One can see that the solution is valid for any distance from playground to home or any intermediary distance. That is if he have, say, halved the distance, the optimal solution is the same and we just halve the time. So the solution includes the 4 siblings repeating the above procedure again and again on any intermediary distance. Naturally that can be done a finite number of times.  
 2)  If there is no intermediary meeting of all 4 or of 3 of them, then the minimal time is when A, B rush to the end, in which case $$T=20$$.    
