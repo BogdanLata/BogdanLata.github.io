@@ -23,17 +23,17 @@ Case 1) Suppose 1st is B, 2nd is D, 3rd is C.
 Then during the time C walks $$t$$, then A walks $$t+2u+2x$$ (she returns). So we have the equation:
 $$
 \begin{equation}
-30t/L=10/L(t+2u+2x) \mbox{time 1}
+30t/L=10/L(t+2u+2x) \mbox{\ time 1}
 \end{equation}
 $$
 Similarly, we obatin the following equations:
 $$
-\begin{equation}
-20t/L=10/L(u+x+y) \mbox{time 2}  \\
-30t/L=10/L(u+2x+2y) \mbox{time 2+time 3}    \\
-20t/L=10/L(2x+2y+z) \mbox{time 3+time 4}  \\
+\begin{align}
+20t/L&=10/L(u+x+y) \mbox{\ time 2}    
+30t/L&=10/L(u+2x+2y) \mbox{\ time 2+time 3}      
+20t/L&=10/L(2x+2y+z) \mbox{\ time 3+time 4}    
 t+u+x+y+z=L
-\end{equation}
+\end{align}
 $$
 Note that total time is $$T=$$ time 1+time 2+time 3+ time 4$$=10/L(t+3u+5x+3y+z)=10/L(L+2u+4x+2y)$$  
 Solving the above system of equations we obtain $$T=$$.  
