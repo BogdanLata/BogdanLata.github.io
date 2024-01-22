@@ -25,13 +25,12 @@ Case 2) Suppose A picks C first and B second. Then we get $$2x=x+2y,3z=2y+z$$, s
 
 
 **Discussion**:    
-1) One can see that the solution is valid for any distance from playground to home or any intermediary distance. That is if he have, say, halved the distance, the optimal solution is the same and we just halve the time. So the solution includes the 4 siblings repeating the above procedure again and again on any intermediary distance. Naturally that can be done a finite number of times.  
+1) One can see that the solution is valid for any distance from playground to home or any intermediary distance. That is if he have, say, halved the distance, the optimal solution is the same and we just halve the time. So the solution includes the 3 siblings repeating the above procedure again and again on any intermediary distance. Naturally that can be done a finite number of times.  
 2) If A does not return, then the minimum is 20.  
 
 **Extra Credit**The four siblings can meet several times all four again during their walk. Wlog we assume they never meet again all four(see Discussion at the ending).  
  Player A picks a person.(1st pick) For optimization purpose, 
-A will drop before home whoever she picked, so that she can go back and the dropped person can meanwhile reach the home. Player A goes back and picks another one.  
-(2nd pick) Now A returns and we argue she has to drop 2nd pick to 1st pick. Because if she drops before reaching the 1st, it is not an ideal solution-
+A will drop before home whoever she picked, so that she can go back and the dropped person can meanwhile reach the home. Player A goes back and picks another one.(2nd pick) Now A returns and we argue she has to drop 2nd pick to 1st pick. Because if she drops before reaching the 1st, it is not an ideal solution-
 she could have dropped the 1st earlier. After this, A goes back second time and picks the 3rd. Ideally, she reaches the home at the same time with 1st and 2nd.    
 So we can split the events into several parts:   
 1) A drops 1st, goes back to the other two  (time 1)  
@@ -58,7 +57,7 @@ $$ \begin{equation}
 $$ \begin{equation} 20t/L=10/L(2x+2y+z), \mbox{ time 3+time 4} \end{equation} $$   
 $$\begin{equation} t+u+x+y+z=L \end{equation} $$
 Note that total time is $$T=$$ time 1+time 2+time 3+ time 4$$=10/L(t+3u+5x+3y+z)=10/L(L+2u+4x+2y)$$  
-Solving the above system of equations we obtain $$T=$18$.  
+Solving the above system of equations we obtain $$T=18$$.  
 If we have other cases, note that only the right hand terms change, which are the ones corresponding to: max(2nd,3rd) (equation1), 1st (equation2), 3rd (equation 3), max(1st,2nd) (equation 4). For case 1) these were (3,2,3,2)*10.  
 Case 2) (1st,2nd,3rd)=(B,C,D). Coefficients (3,2,6,2). This case is clearly slower than the first.  We calculate though, $$T=750/41\sim 19=18.29$$.
 Case 3) (1st,2nd,3rd)=(C,B,D). Coefficients (2,3,6,2). Here, $$T=1370/79\sim 17.3418$$  
