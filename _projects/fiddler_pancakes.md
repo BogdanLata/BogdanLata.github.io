@@ -8,13 +8,13 @@ category: work
 ---
 [Fiddler Problem: Can You Make It Home in Time for Pancakes?](https://thefiddler.substack.com/p/can-you-make-it-home-in-time-for)  
 Wlog we assume they never meet again all three(see Discussion at the ending).  
-Denote the total length L and the players A,B,C with speeds L/10,L/20,L/30. (the other one is D wwith speed L/60, but D appears only at Extra Credit part). Ideally, A picks one of them and drops it somewhere before the home. Then A returns and picks the other one left. Then A walks home, at the same time as B,C (one of them is on A's back).  
+Denote the total length L and the players A,B,C with speeds L/10,L/20,L/30. (the other one is D with speed L/60, but D appears only at Extra Credit part). Ideally, A picks one of them and drops it somewhere before the home. Then A returns and picks the other one left. Then A walks home, at the same time as B,C (one of them is on A's back).    
 We have the following times:  
-1) A walks and drops 1st, (time 1)
-2)  goes back to the other one (time 2)
-3) A returns home (time 3)
+1) A walks and drops 1st, (time 1)  
+2)  goes back to the other one (time 2)  
+3) A returns home (time 3)  
    This way we create several segments of the trip:    
-{% raw %}Start---|---|---|End {% endraw %}, and denote the lengths of these segments: $$x,y,z$$.  
+{% raw %}Start---|---|---|End {% endraw %}, and denote the lengths of these segments: $$x,y,z$$.    
 Case 1) Suppose A picks B first and C second. Then we obtain the following equations:
 $$ \begin{equation} 30x/L=10/L(x+2y), \mbox{time 1+time 2} \end{equation} $$
 $$ \begin{equation} 20z/L=10/L(2y+z), \mbox{time 2+time 3} \end{equation} $$
