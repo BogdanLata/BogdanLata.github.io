@@ -18,7 +18,7 @@ So we can split the events into several parts:
 3) goes back to the last  (time 3)  
 4) they all rush to home (time 4)
 This way we create several segments of the trip:  
-{% raw %}Start---|---|---|---|---End { endraw %}, and denote the lengths of these segments: $$t,u,x,y,z$$.
+{% raw %}Start---|---|---|---|---End {% endraw %}, and denote the lengths of these segments: $$t,u,x,y,z$$.
 Case 1) Suppose 1st is B, 2nd is D, 3rd is C.  
 Then the time C walks $$t$$, then A walks $$t+2u+2x$$ (she returns). So we have the equation:
 $$
