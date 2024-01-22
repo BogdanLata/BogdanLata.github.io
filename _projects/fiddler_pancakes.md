@@ -23,18 +23,19 @@ Case 1) Suppose 1st is B, 2nd is D, 3rd is C.
 Then during the time C walks $$t$$, then A walks $$t+2u+2x$$ (she returns). So we have the equation:
 $$
 \begin{equation}
-30t/L=10/L(t+2u+2x) \mbox{\ time 1}
+30t/L=10/L(t+2u+2x) \mbox{     time 1}
 \end{equation}
 $$
 Similarly, we obatin the following equations:
 $$
-\begin{align}
-20t/L&=10/L(u+x+y) \mbox{\ time 2}    
-30t/L&=10/L(u+2x+2y) \mbox{\ time 2+time 3}      
-20t/L&=10/L(2x+2y+z) \mbox{\ time 3+time 4}    
-t+u+x+y+z=L
-\end{align}
-$$
+\begin{equation}
+20t/L&=10/L(u+x+y), \mbox{ time 2}
+\end{equation} $$
+$$ \begin{equation}
+30t/L&=10/L(u+2x+2y), \mbox{ time 2+time 3}
+\end{equation} $$   
+$$ \begin{equation} 20t/L&=10/L(2x+2y+z), \mbox{ time 3+time 4} \end{equation} $$   
+$$\begin{equation} t+u+x+y+z=L \end{equation} $$
 Note that total time is $$T=$$ time 1+time 2+time 3+ time 4$$=10/L(t+3u+5x+3y+z)=10/L(L+2u+4x+2y)$$  
 Solving the above system of equations we obtain $$T=$$.  
 If we have other cases, note that only the right hand terms change, which are the ones corresponding to: max(2nd,3rd) (equation1), 1st (equation2), 3rd (equation 3), max(1st,2nd) (equation 4). For case 1) these were (3,2,3,2)*10.  
