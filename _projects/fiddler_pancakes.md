@@ -26,15 +26,15 @@ $$
 30t/L=10/L(t+2u+2x) \mbox{     time 1}
 \end{equation}
 $$
-Similarly, we obatin the following equations:
+Similarly, we obtain the following equations:
 $$
 \begin{equation}
-20t/L&=10/L(u+x+y), \mbox{ time 2}
+20t/L=10/L(u+x+y), \mbox{ time 2}
 \end{equation} $$
 $$ \begin{equation}
-30t/L&=10/L(u+2x+2y), \mbox{ time 2+time 3}
+30t/L=10/L(u+2x+2y), \mbox{ time 2+time 3}
 \end{equation} $$   
-$$ \begin{equation} 20t/L&=10/L(2x+2y+z), \mbox{ time 3+time 4} \end{equation} $$   
+$$ \begin{equation} 20t/L=10/L(2x+2y+z), \mbox{ time 3+time 4} \end{equation} $$   
 $$\begin{equation} t+u+x+y+z=L \end{equation} $$
 Note that total time is $$T=$$ time 1+time 2+time 3+ time 4$$=10/L(t+3u+5x+3y+z)=10/L(L+2u+4x+2y)$$  
 Solving the above system of equations we obtain $$T=$$.  
@@ -42,12 +42,12 @@ If we have other cases, note that only the right hand terms change, which are th
 Case 2) (1st,2nd,3rd)=(B,C,D). This case is clearly slower than the first.  We calculate though, $$T=$$.
 Case 3) (1st,2nd,3rd)=(C,B,D). Coefficients (2,3,6,2). Here, $$T=$$  
 Case 4) (1st,2nd,3rd)=(C,D,B). Coefficients (2,3,2,3). Here $$T=$$  
-Case 4) (1st,2nd,3rd)=(D,B,C). Coefficients (2,6,3,2). Here $$T=$$
-Case 4) (1st,2nd,3rd)=(D,C,B). Coefficients (2,6,2,3). Here $$T=$$
-In conclusion, the ideal set up is: with the time:
-**Discussion**:
-1) One can see that the solution is valid for any distance from playground to home or any intermediary distance. That is if he have, say, halved the distance, the optimal solution is the same and we just halve the time. So the solution includes the 4 siblings repeating the above procedure again and again on any intermediary distance. Naturally that can be done a finite number of times.
-2)  If there is no intermediary meeting of all 4 or of 3 of them, then the minimal time is when A, B rush to the end, in which case $T=20$.
+Case 5) (1st,2nd,3rd)=(D,B,C). Coefficients (2,6,3,2). Here $$T=$$  
+Case 6) (1st,2nd,3rd)=(D,C,B). Coefficients (2,6,2,3). Here $$T=$$  
+In conclusion, the ideal set up is: with the time:  
+**Discussion**:  
+1) One can see that the solution is valid for any distance from playground to home or any intermediary distance. That is if he have, say, halved the distance, the optimal solution is the same and we just halve the time. So the solution includes the 4 siblings repeating the above procedure again and again on any intermediary distance. Naturally that can be done a finite number of times.  
+2)  If there is no intermediary meeting of all 4 or of 3 of them, then the minimal time is when A, B rush to the end, in which case $T=20$.  
 3) If there is no intemediary meeting of all 4 but 3 of them meet again. This case happens if A at some point drops a player and goes back for other one. An optimal way as we have seen is, in the final stage to pass a player to the leading one. So there is a final $$z$$ and an initial segment  $$t$$. The solution is given above.     
 
 
