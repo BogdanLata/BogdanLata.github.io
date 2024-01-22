@@ -1,6 +1,6 @@
 --
 layout: page
-title: Fiddler problems
+title: Fiddler_pancakes
 description:
 img: 
 importance: 2
@@ -29,10 +29,16 @@ $$
 Similarly, we obatin the following equations:
 $$
 \begin{equation}
-20t/L=10/L(u+x+y) \mbox{time 2}  
+20t/L=10/L(u+x+y) \mbox{time 2}
 30t/L=10/L(u+2x+2y) \mbox{time 2+time 3}  
-20t/L=10/L(2x+2y+z) \mbox{time 3+time 4}  
+20t/L=10/L(2x+2y+z) \mbox{time 3+time 4}
+t+u+x+y+z=L
 \end{equation}
 $$
+Note that total time is $$T=$$ time 1+time 2+time 3+ time 4$$=10/L(t+3u+5x+3y+z)=10/L(L+2u+4x+2y)$$  
+Solving the above system of equations we obtain $$T=$$.  
+If we have other cases, not that only the right hand terms change, which are the one corresponding to: max(2nd,3rd) (equation1), 1st (equation2), 3rd (equation 3), max(1st,2nd) (equation 4). For case 1) these were (3,2,3,2)*10.  
+Case 2) (1st,2nd,3rd)=(B,C,D). This case is clearly slower than the first.  I calculated though $$T=$$.
+Case 3) (1st,2nd,3rd)=(C,B,D). Coefficients (2,3,6,2). Here, $$T=$$
 
 
