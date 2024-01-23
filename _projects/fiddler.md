@@ -41,22 +41,22 @@ $$
 Suppose we choose $$x$$ and $$y$$ from set $$A=[4,6,8,10,12,20]$$. We find minimum of them, $$\min(x,y)$$. Then the probability to pick two equal numbers is:  
 $$
 \begin{equation}
-\sum_{(x,y)\in A\times A}\frac{\min(x,y)}{36\cdot x \cdot y}=\frac{432345564227567591}{4611686018427387904}\sim 0.09375
+\sum_{(x,y)\in A\times A}\frac{\min(x,y)}{36\cdot x \cdot y}=\frac{3}{32}\sim 0.09375
 \end{equation}, $$
 since we have 36 pairs.  
 **Extra Credit** Suppose we pick a tuple $$(x,y,z)\in A\times A\times A$$. Then we sort $$(x,y,z)$$ to get $$(a,b,c)$$, where $$a\leq b\leq c$$. Now we cast the dice $$x,y,z$$ to obtain three values. The probability that all three values are equal is:
 $$\begin{equation}
-p_1=\sum_{(x,y,z)\in A\times A\times A}\frac{a}{216xyz}=\frac{388494218522510891}{36893488147419103232}\sim 0.01053
+p_1=\sum_{(x,y,z)\in A\times A\times A}\frac{a}{216xyz}=\frac{32753}{3110400}\sim 0.01053
 \end{equation} $$  
 The probability that all three values are different is:  
 $$
 \begin{equation}
-p_3=\sum_{(x,y,z)\in A\times A\times A}\frac{a(b-1)(c-2)}{216xyz}=\frac{1705886440187656367}{2305843009213693952}\sim 0.73981
+p_3=\sum_{(x,y,z)\in A\times A\times A}\frac{a(b-1)(c-2)}{216xyz}=\frac{1150553}{1555200}\sim 0.73981
 \end{equation} \notag $$
 
 The probability that only two values are different out of three is :$$p_2=1-p_1-p_3$$.    
 Therefore the expectation of the number of different values is:    
-$$E=p_1+2\cdot p_2+3\cdot p_3=\frac{100692665119318197445}{36893488147419103232}\sim 2.72928$$.
+$$E=p_1+2\cdot p_2+3\cdot p_3=\frac{8489153}{3110400}\sim 2.72928$$.
 
 <details>
 <summary>
@@ -71,12 +71,12 @@ from decimal import Decimal, getcontext
 from fractions import Fraction
 from myscript import List,dec
 A = [4, 6, 8, 10, 12, 20]
-p = [(x, y,min(x,y),Fraction(1/36*min(x,y)/(x*y))) for x in A for y in A]
+p = [(x, y,min(x,y),Fraction(1,36)*Fraction(min(x,y),(x*y))) for x in A for y in A]
 p=np.array(p)
 w=sum(p[:,3]);print(w)
 print(dec(w)
-q=[(x,y,z,pr,Fraction(min(x,y,z)/(216*x*y*z)),Fraction(pr)) for x in A for y in A for z in A
-   if ((o:=List(sorted([x,y,z]))) and (pr:=o[1]*(o[2]-1)*(o[3]-2)*1/(x*y*z)*1/216))]
+q=[(x,y,z,pr,Fraction(min(x,y,z),216*x*y*z),Fraction(pr)) for x in A for y in A for z in A
+   if ((o:=List(sorted([x,y,z]))) and (pr:=Fraction(o[1]*(o[2]-1)*(o[3]-2),(x*y*z)*216)))]
 q=np.array(q)
 q1=sum(q[:,4]);print(q1);print(dec(q1))
 q3=sum(q[:,5]);print(q3);print(dec(q3))
