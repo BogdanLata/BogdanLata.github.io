@@ -16,8 +16,8 @@ We have the following times:
    This way we create several segments of the trip:    
 {% raw %}Start---|---|---|End {% endraw %}, and denote the lengths of these segments: $$x,y,z$$.    
 Case 1) Suppose A picks B first and C second. Then we obtain the following equations:
-$$ \begin{equation} 30x/L=10/L(x+2y), \mbox{time 1+time 2} \end{equation} $$
-$$ \begin{equation} 20z/L=10/L(2y+z), \mbox{time 2+time 3} \end{equation} $$
+$$ \begin{align} 30x/L&=10/L(x+2y), \mbox{time 1+time 2} 
+20z/L&=10/L(2y+z), \mbox{time 2+time 3} \end{align} $$
 $$ \begin{equation} x+y+z=L, \end{equation} $$
 with total time $$T=10/L(L+2y)$$.
  Then we have $$3x=x+2y,2z=2y+z$$ or $$ x=y,z=2y$$, so $$y+y+2y=L,y=L/4$$ and $$T=10/L(L+L/2)=15$$    
