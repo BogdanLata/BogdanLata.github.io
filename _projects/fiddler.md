@@ -35,7 +35,7 @@ $$
  We obtain the first probability as 25439/71106~0.3578  and second probability as 45667/71106~0.6422.
 
 
-<a name="dice1"></a>  
+<a name="dice"></a>  
   
 [Fiddler Problem: Can You Roll the Dungeon Master’s Dice?](https://thefiddler.substack.com/p/can-you-roll-the-dungeon-masters)  
 Suppose we choose $$x$$ and $$y$$ from set $$A=[4,6,8,10,12,20]$$. We find minimum of them, $$\min(x,y)$$. Then the probability to pick two equal numbers is:  
