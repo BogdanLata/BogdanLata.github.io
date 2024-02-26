@@ -1,8 +1,8 @@
 ---
 layout: page
-title: Problems 1
+title:The Likeliest Monopoly Square
 description:
-img: assets/img/12.jpg
+img:
 importance: 1
 category: work
 related_publications: 
