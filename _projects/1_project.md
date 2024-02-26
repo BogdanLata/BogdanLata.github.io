@@ -26,7 +26,12 @@ Running the program, we obtain the extremum values for two dice case:
 So the maximum probability is p(7)~0.18223 and the minimum probability (out of the numbers from 10 to 39) is p(13)~0.12470 
 For the three dice case, the least likely case (out of the numbers from 10 to 39) is p(17)~0.07634
 
+
+<details>
+<summary>
 Here is the Python code for the problem:
+</summary>  
+<pre><code>
 
 ```python
 from numpy.polynomial import Polynomial as P
@@ -92,9 +97,9 @@ print(max((val,idx+1) for idx, val in enumerate(sums)))
 s10=sum[10:]
 print(min((val,idx+11) for idx, val in enumerate(s10)))
 
-
 ```
-
+</code></pre>
+</details>
 
 {% comment %} Every project has a beautiful feature showcase page.
 It's easy to include images in a flexible 3-column grid format.
