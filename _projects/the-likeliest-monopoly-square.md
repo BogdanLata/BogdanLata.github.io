@@ -1,6 +1,6 @@
 ---
 layout: page
-title:The Likeliest Monopoly Square
+title: The Likeliest Monopoly Square
 description:
 img: assets/img/12.jpg
 importance: 1
