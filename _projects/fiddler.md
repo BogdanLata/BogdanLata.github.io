@@ -91,8 +91,8 @@ q2=1-q1-q3;print(q2);print(q1+2*q2+3*q3);print(dec(q2))
         
 [Fiddler On the Roof Problem:Could You Have Won the Super Bowl?](https://thefiddler.substack.com/p/could-you-have-won-the-super-bowl)  
 Let's call your own team A and opponent team B. The probability team A can win in the first two times is:  
-$$ P(A=7)*P(B=0 \mbox{ or } B=3)+P(A=3)*P(B=0)=1/3*2/3+1/3*1/3=1/3 $$. However A can win in the subsequent times if they draw up to this point. The probability they draw in the first two times is $$1/3*1/3+1/3*1/3+1/3*1/3=1/3$$. And the probability A wins later on is $$2/3+1/9*2/3+1/9^2*2/3+\ldots =2/3*9/8=3/4$$  
-Hence, overall, A wins with probability: $$ 1/3+1/3*3/4=1/3+1/4=7/12\sim =0.5833 $$  
+$$ P(A=7)*P(B=0 \mbox{ or } B=3)+P(A=3)*P(B=0)=1/3*2/3+1/3*1/3=1/3 $$ However A can win in the subsequent times if they draw up to this point. The probability they draw in the first two times is $$1/3*1/3+1/3*1/3+1/3*1/3=1/3$$. And the probability A wins later on is $$2/3+1/9*2/3+1/9^2*2/3+\ldots =2/3*9/8=3/4$$  
+Hence, overall, A wins with probability: $$ 1/3+1/3*3/4=1/3+1/4=7/12\sim 0.583(3) $$  
 **Extra Credit**  
 The teams have to choose between scenarious (7 3 0) and (7 0). B knows the score after first part of game, so it can adjust its strategy accordingly. We have the followinng cases:  
 1a) if A chooses (7 0) and scores a 7, B clearly chooses (7 0). Then $$P(A \mbox{ wins}|A=7)=1/2+1/2*3/4=1/2*7/4=7/8$$  
@@ -100,7 +100,7 @@ The teams have to choose between scenarious (7 3 0) and (7 0). B knows the score
 If instead, B chooses (7 3 0), B wins with probability of $$2/3+1/3*1/4=2/3+1/12=9/12=3/4>5/8$$. Therefore, B opts for the better alternative (7 3 0). In this case, $$P(A \mbox{ wins}|A=0)=1-3/4=1/4$$  
 Hence, overall, if A chooses (7,0), its probability of winning is $$P(A=7)*P(A \mbox{ wins}|A=7)+P(A=0)*P(A \mbox{ wins}|A=0)$$   $$=1/2*7/8+1/2*1/4=7/16+2/16=9/16= 0.5625$$  
 2a) if A chooses (7 3 0)  and scores a 7, B chooses (7 0) and A wins with probability 7/8, just as in case 1a)  
-2b) if A chooses (7 3 0) and scores a 3, if B chooses (7 0), B wins with probability $$1/2$$. If B chooses (7 3 0), it wins with probability $$1/3+1/3*1/4=1/3*5/4=5/12<1/2$$. Hence B opts for the better (7 0). Then A wins with probability $$1/2$$
+2b) if A chooses (7 3 0) and scores a 3, if B chooses (7 0), B wins with probability $$1/2$$. If B chooses (7 3 0), it wins with probability $$1/3+1/3*1/4=1/3*5/4=5/12<1/2$$. Hence B opts for the better (7 0). Then A wins with probability $$1/2$$  
 2c) if A chooses (7 3 0) and scores a 0, B chooses (7 3 0). In this case, A wins with probability 1/4, just in case 1b).  
 So overall, if A chooses (7 3 0), its probability of winning is $$P(A=7)*P(A \mbox{ wins}|A=7)+P(A=3)*P(A \mbox{ wins}|A=3)$$   $$+P(A=0)*P(A \mbox{ wins}|A=0)=1/3*7/8+1/3*1/2+1/3*1/4=13/24= 0.541(6) $$.  
 In conclusion, since A wants to optimize its way of winning, it will therefore want the stategy (7 0), in which case its chance of winning is 0.5625.  
