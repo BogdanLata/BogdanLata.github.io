@@ -88,7 +88,9 @@ q2=1-q1-q3;print(q2);print(q1+2*q2+3*q3);print(dec(q2))
 
 
 </details>
-        
+
+<a name="superbowl"></a>  
+  
 [Fiddler On the Roof Problem:Could You Have Won the Super Bowl?](https://thefiddler.substack.com/p/could-you-have-won-the-super-bowl)  
 Let's call your own team A and opponent team B. The probability team A can win in the first two times is:  
 $$ P(A=7)*P(B=0 \mbox{ or } B=3)+P(A=3)*P(B=0)=1/3*2/3+1/3*1/3=1/3 $$ However A can win in the subsequent times if they draw up to this point. The probability they draw in the first two times is $$1/3*1/3+1/3*1/3+1/3*1/3=1/3$$. And the probability A wins later on is $$2/3+1/9*2/3+1/9^2*2/3+\ldots =2/3*9/8=3/4$$  
