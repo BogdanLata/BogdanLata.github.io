@@ -23,12 +23,13 @@ social: true  # includes social icons at the bottom of the page
 [The Likeliest Monopoly Square](https://bogdanlata.github.io/projects/The-Likeliest-Monopoly-Square/)  
 [Can You Make It Home For Pancakes?](https://bogdanlata.github.io/projects/fiddler_pancakes/)  
 [Distribution of a convolution](https://stats.stackexchange.com/questions/13474/how-to-define-the-distribution-of-a-convolution-when-there-is-some-partial-order/13665#13665)    
-[distribution of maximum of a pair of iid draws](https://stats.stackexchange.com/questions/13259/what-is-the-distribution-of-maximum-of-a-pair-of-iid-draws-where-the-minimum-is/13286#13286)  
+[Distribution of maximum of a pair of iid draws](https://stats.stackexchange.com/questions/13259/what-is-the-distribution-of-maximum-of-a-pair-of-iid-draws-where-the-minimum-is/13286#13286)  
 **Inequalities**  
 [Crux Mathematicorum.Problem 4848](https://bogdanlata.github.io/projects/Inequalities/)  
+[Hung Viet's Inequality](https://www.cut-the-knot.org/arithmetic/algebra/HungVietInequality4.shtml)
 **Other math**  
-[Tensoring of exact sequences](https://math.stackexchange.com/questions/24344/help-understanding-tensoring-of-exact-sequences/24367#24367)
-[Equilateral Triangle and Squares](https://www.cut-the-knot.org/m/Geometry/TranStan.shtml#FigureThat)  
+[Tensoring of exact sequences](https://math.stackexchange.com/questions/24344/help-understanding-tensoring-of-exact-sequences/24367#24367)  
+[Equilateral Triangle and Squares (Solution 3)](https://www.cut-the-knot.org/m/Geometry/TranStan.shtml#FigureThat)  
 **Teaching**  
 [Stats Exchange Page](https://stats.stackexchange.com/users/3454/bogdan-lataianu)  
 [Math Exchange Page](https://math.stackexchange.com/users/7243/bogdan-lataianu)  
