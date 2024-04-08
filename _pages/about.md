@@ -26,7 +26,7 @@ social: true  # includes social icons at the bottom of the page
 [Distribution of maximum of a pair of iid draws](https://stats.stackexchange.com/questions/13259/what-is-the-distribution-of-maximum-of-a-pair-of-iid-draws-where-the-minimum-is/13286#13286)  
 **Inequalities**  
 [Crux Mathematicorum.Problem 4848](https://bogdanlata.github.io/projects/Inequalities/)  
-[Hung Viet's Inequality](https://www.cut-the-knot.org/arithmetic/algebra/HungVietInequality4.shtml)
+[Hung Viet's Inequality](https://www.cut-the-knot.org/arithmetic/algebra/HungVietInequality4.shtml)  
 **Other math**  
 [Tensoring of exact sequences](https://math.stackexchange.com/questions/24344/help-understanding-tensoring-of-exact-sequences/24367#24367)  
 [Equilateral Triangle and Squares (Solution 3)](https://www.cut-the-knot.org/m/Geometry/TranStan.shtml#FigureThat)  
