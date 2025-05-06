@@ -30,6 +30,7 @@ social: true  # includes social icons at the bottom of the page
 **Other math**  
 [Tensoring of exact sequences](https://math.stackexchange.com/questions/24344/help-understanding-tensoring-of-exact-sequences/24367#24367)  
 [Equilateral Triangle and Squares (Solution 3)](https://www.cut-the-knot.org/m/Geometry/TranStan.shtml#FigureThat)  
+[Crux Mathematicorum.Problem 4882](https://bogdanlata.github.io/projects/Crux 4882/)  
 **Teaching**  
 [Stats Exchange Page](https://stats.stackexchange.com/users/3454/bogdan-lataianu)  
 [Math Exchange Page](https://math.stackexchange.com/users/7243/bogdan-lataianu)  
