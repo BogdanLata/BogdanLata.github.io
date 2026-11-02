@@ -24,12 +24,11 @@ social: true  # includes social icons at the bottom of the page
 **Inequalities**  
 [Crux Mathematicorum.Problem 4848](https://bogdanlata.github.io/projects/Crux 4848/)  
 [Hung Viet's Inequality](https://www.cut-the-knot.org/arithmetic/algebra/HungVietInequality4.shtml)  
-**Other math**  
-[Algebra](https://bogdanlata.github.io/projects/Algebra/)
+**Other math**    
+[Algebra](https://bogdanlata.github.io/projects/Algebra/)  
 [Tensoring of exact sequences](https://math.stackexchange.com/questions/24344/help-understanding-tensoring-of-exact-sequences/24367#24367)  
 [Equilateral Triangle and Squares (Solution 3)](https://www.cut-the-knot.org/m/Geometry/TranStan.shtml#FigureThat)  
-[Crux Mathematicorum.Problem 4882](https://bogdanlata.github.io/projects/Crux 4882/)  
-**Teaching**  
+[Crux Mathematicorum.Problem 4882](https://bogdanlata.github.io/projects/Crux 4882/)   
 [Stats Exchange Page](https://stats.stackexchange.com/users/3454/bogdan-lataianu)  
 [Math Exchange Page](https://math.stackexchange.com/users/7243/bogdan-lataianu)  
 
