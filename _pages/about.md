@@ -22,7 +22,7 @@ social: true  # includes social icons at the bottom of the page
 [Distribution of a convolution](https://stats.stackexchange.com/questions/13474/how-to-define-the-distribution-of-a-convolution-when-there-is-some-partial-order/13665#13665)    
 [Distribution of maximum of a pair of iid draws](https://stats.stackexchange.com/questions/13259/what-is-the-distribution-of-maximum-of-a-pair-of-iid-draws-where-the-minimum-is/13286#13286)  
 **Inequalities**  
-[Inequalities](https://bogdanlata.github.io/projects/Crux 4848/)  
+[Inequalities](https://bogdanlata.github.io/projects/Inequalities/)  
 [Hung Viet's Inequality (Solution 4)](https://www.cut-the-knot.org/arithmetic/algebra/HungVietInequality4.shtml)  
 **Other math**    
 [Algebra](https://bogdanlata.github.io/projects/Inequalities/)  
