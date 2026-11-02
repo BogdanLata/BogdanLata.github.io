@@ -16,17 +16,8 @@ category: work
         {% include figure.html path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
-```
-{% endraw %}
-{% endcomment %}
 
-{% comment %}
-{% raw %}
-```python
-a={{{0,0,0},{0,0,0}},{{0,0,1},{0,0,1}},{{0,1,0},{0,1,0}},{{0,1,1},{0,1,1}},{{1,0,0},{1,0,0}},{{1,0,1},{1,0,1}},{{1,1,0},{1,1,0}},{{1,1,1},{1,1,1}}}
-```
-{% endraw %}
-{% endcomment %}
+
 Crux Mathematicorum, Problem 4848
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
