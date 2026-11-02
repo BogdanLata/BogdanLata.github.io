@@ -16,7 +16,7 @@ social: true  # includes social icons at the bottom of the page
 ---
 **Sections**  
 **Probability**  
-[Fiddler On The Proof Problems](https://bogdanlata.github.io/projects/fiddler/)
+[Fiddler On The Proof Problems](https://bogdanlata.github.io/projects/fiddler/)  
 [The Likeliest Monopoly Square](https://bogdanlata.github.io/projects/The-Likeliest-Monopoly-Square/)  
 [Can You Make It Home For Pancakes?](https://bogdanlata.github.io/projects/fiddler_pancakes/)  
 [Distribution of a convolution](https://stats.stackexchange.com/questions/13474/how-to-define-the-distribution-of-a-convolution-when-there-is-some-partial-order/13665#13665)    
